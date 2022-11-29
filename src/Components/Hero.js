@@ -16,7 +16,7 @@ function HeroPage() {
 
       <img src={Images} alt="Images" className="mt-8 rounded" />
 
-      <div className="columns px-5">
+      <div className="columns px-5 mt-5">
         <h1 className="md:text-lg sm:text-base mt-2 font-semibold">
           Story, emotion <br /> and purpose
         </h1>

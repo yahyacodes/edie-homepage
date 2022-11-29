@@ -1,22 +1,84 @@
 import React from "react";
+import { BiPencil } from "react-icons/bi";
+import { BsCode } from "react-icons/bs";
+import { AiFillDatabase } from "react-icons/ai";
 
 function Cards() {
   return (
-    <div className="container mt-8">
-      <div className="flex mt-8">
-        <div className="block p-6 rounded-lg shadow-lg bg-white max-w-sm">
-          <h5 className="text-gray-900 text-xl leading-tight font-medium mb-2">
-            Card title
+    <div className="container mt-8 pt-20 pl-5">
+      <div className="columns px-5 mt-5">
+        <h1 className="md:text-lg sm:text-base mt-2 font-semibold">
+          We offer high <br /> demand services
+        </h1>
+      </div>
+
+      <div className="grid 2xl:grid-cols-5 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 sm:grid-cols-1 ">
+        <div className="w-80 mt-8 p-6 bg-white border rounded-lg shadow-md">
+          <div className="text-white bg-sky-500 rounded h-8 w-8">
+            <BiPencil className="text-lg" />
+          </div>
+          <h5 className="mb-2 mt-2 text-2xl font-semibold tracking-tight text-black">
+            UI/UX Design
           </h5>
-          <p className="text-gray-700 text-base mb-4">
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
+
+          <p className="mb-3 font-normal text-gray-700 text-sm">
+            Go to this step by step guideline process on how to certify for your
+            weekly benefits:
           </p>
           <button
             type="button"
-            className=" inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
+            className="text-white bg-gray-400 hover:bg-sky-500 
+        focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-2.5 py-1.5 
+        mr-2 mb-2 mt-2"
           >
-            Button
+            Get started
+          </button>
+        </div>
+
+        {/* Frontend */}
+
+        <div className="w-80 mt-8 p-6 bg-white border rounded-lg shadow-md">
+          <div className="text-white bg-green-500 h-8 w-8 rounded">
+            <BsCode className="text-lg" />
+          </div>
+          <h5 className="mb-2 mt-2 text-2xl font-semibold tracking-tight text-black">
+            Front End
+          </h5>
+
+          <p className="mb-3 font-normal text-gray-700 text-sm">
+            Go to this step by step guideline process on how to certify for your
+            weekly benefits:
+          </p>
+          <button
+            type="button"
+            className="text-white bg-gray-400 hover:bg-sky-500 
+        focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-2.5 py-1.5 
+        mr-2 mb-2 mt-2"
+          >
+            Get started
+          </button>
+        </div>
+
+        {/* Backend */}
+        <div className="w-80 mt-8 p-6 bg-white border rounded-lg shadow-md">
+          <div className="text-white bg-red-500 h-8 w-8 rounded">
+            <AiFillDatabase className="text-lg" />
+          </div>
+          <h5 className="mb-2 mt-2 text-2xl font-semibold tracking-tight text-black">
+            Back End
+          </h5>
+
+          <p className="mb-3 font-normal text-gray-700 text-sm">
+            Go to this step by step guideline process on how to certify for your
+            weekly benefits:
+          </p>
+          <button
+            type="button"
+            className="text-white bg-gray-400 hover:bg-sky-500 
+        focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-2.5 py-1.5 
+        mr-2 mb-2 mt-2"
+          >
+            Get started
           </button>
         </div>
       </div>
